@@ -18,7 +18,9 @@ let badges = {
   'SIL': `[![License: Open Font-1.1](https://img.shields.io/badge/License-OFL_1.1-lightgreen.svg)](https://opensource.org/licenses/OFL-1.1)`,
   'Unlicense': `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`,
   'WTFPL': `[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)`,
-  'Zlib': `[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)`
+  'Zlib': `[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)`,
+  'None': ``,
+
 }
 return badges[license];
 }
@@ -26,13 +28,33 @@ return badges[license];
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+let links = {
+  'Apache': ``,
+  'Boost': ``,
+  'BSD': ``,
+  'Creative Commons': ``,
+  'Eclipse': ``,
+  'GNU': ``,
+  'The Organization for Ethical Source': ``,
+  'IBM': ``,
+  'ISC': ``,
+  'MIT': ``,
+  'Mozilla': ``,
+  'Open Data Commons': ``,
+  'Perl': ``,
+  'SIL': ``,
+  'Unlicense': ``,
+  'WTFPL': ``,
+  'Zlib': ``,
+  'None': ``
+}
+return links[license];
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-
+return `This is licensed for open source through ${license}.Please visit ${renderLicenseLink(license)} for more information.`
 }
 
 // TODO: Create a function to generate markdown for README
