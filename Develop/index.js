@@ -62,9 +62,10 @@ const questions = [
     }
   },
   {
-    type: 'input',
-    message: '',
-    name: '',
+    type: 'list',
+    message: 'Please choose a license type for your project or select none:',
+    choices: ['Apache', 'Boost', 'BSD', 'Creative Commons', 'Eclipse', 'GNU', 'The Organization for Ethical Source', 'IBM', 'ISC', 'MIT', 'Mozilla', 'Open Data Commons', 'Perl', 'SIL', 'Unlicense', 'WTFPL', 'Zlib', 'None'], 
+    name: 'license',
     validate: (response) => {
       if(!response){
         return console.log('You must submit a response!');
@@ -98,6 +99,22 @@ const questions = [
     type: 'input',
     message: 'How can others test to your project?',
     name: 'tests',
+    validate: (response) => {
+      if(!response){
+        return console.log('You must submit a response!');
+      }
+      return true
+    }
+  },
+  {
+    type: 'input',
+    message: 'What is your GitHub URL?',
+    name: 'questionsGitHub',
+  },
+  {
+    type: 'input',
+    message: 'What is your email?',
+    name: 'questionsEmail',
     validate: (response) => {
       if(!response){
         return console.log('You must submit a response!');

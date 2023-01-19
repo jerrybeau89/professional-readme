@@ -11,7 +11,7 @@ let badges = {
   'The Organization for Ethical Source': `[![License: Hippocratic 2.1](https://img.shields.io/badge/License-Hippocratic_2.1-lightgrey.svg)](https://firstdonoharm.dev)`,
   'IBM': `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`,
   'ISC': `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`,
-  'MIT': `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT`,
+  'MIT': `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
   'Mozilla': `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`,
   'Open Data Commons': `[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)`,
   'Perl': `[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)`,
@@ -29,23 +29,23 @@ return badges[license];
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
 let links = {
-  'Apache': ``,
-  'Boost': ``,
-  'BSD': ``,
-  'Creative Commons': ``,
-  'Eclipse': ``,
-  'GNU': ``,
-  'The Organization for Ethical Source': ``,
-  'IBM': ``,
-  'ISC': ``,
-  'MIT': ``,
-  'Mozilla': ``,
-  'Open Data Commons': ``,
-  'Perl': ``,
-  'SIL': ``,
-  'Unlicense': ``,
-  'WTFPL': ``,
-  'Zlib': ``,
+  'Apache': `https://opensource.org/licenses/Apache-2.0`,
+  'Boost': `https://www.boost.org/LICENSE_1_0.txt`,
+  'BSD': `https://opensource.org/licenses/BSD-3-Clause`,
+  'Creative Commons': `http://creativecommons.org/publicdomain/zero/1.0/`,
+  'Eclipse': `https://opensource.org/licenses/EPL-1.0`,
+  'GNU': `https://www.gnu.org/licenses/gpl-3.0`,
+  'The Organization for Ethical Source': `https://firstdonoharm.dev`,
+  'IBM': `https://opensource.org/licenses/IPL-1.0`,
+  'ISC': `https://opensource.org/licenses/ISC`,
+  'MIT': `https://opensource.org/licenses/MIT`,
+  'Mozilla': `https://opensource.org/licenses/MPL-2.0`,
+  'Open Data Commons': `https://opendatacommons.org/licenses/odbl/`,
+  'Perl': `https://opensource.org/licenses/Artistic-2.0`,
+  'SIL': `https://opensource.org/licenses/OFL-1.1`,
+  'Unlicense': `http://unlicense.org/`,
+  'WTFPL': `http://www.wtfpl.net/about/`,
+  'Zlib': `https://opensource.org/licenses/Zlib`,
   'None': ``
 }
 return links[license];
@@ -61,6 +61,8 @@ return `This is licensed for open source through ${license}.Please visit ${rende
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ${renderLicenseBadge(data.license)}
+  
   ## Description
   ${data.description}
 
@@ -85,9 +87,6 @@ function generateMarkdown(data) {
   ## License 
   ${renderLicenseSection(data.license)}
 
-  ## Badges
-  ${renderLicenseBadge(data.license)}
-
   ## Features
   ${data.features}
 
@@ -96,7 +95,10 @@ function generateMarkdown(data) {
 
   ## Tests
   ${data.tests}
-`;
+
+  ## Questions
+
+  Please contact me at ${data.questionsEmail} with any questions you may have. You can also find my GitHub at ${data.questionsGitHub}. Thank you! `;
 }
 
 module.exports = generateMarkdown;
