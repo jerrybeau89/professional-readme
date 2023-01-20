@@ -1,8 +1,9 @@
 # Professional README Generator
 
+  
+  
   ## Description
-  I created this project so that I can use node.js to create professional readme file through javascript.  
-
+  I created this project so that I can use node.js to create professtional 
 
   ## Table of Contents
   
@@ -17,13 +18,13 @@
   npm install professional-readme
 
   ## Usage
-  The user can navigate to the program folder in the terminal or opens the integrated terminal through VS code. Then uses 'node index.js' to start the program. The user will then complete prompts through the inquirer and a complete README.md will be generated from the users data.
+  The user can navigate to the program folder in the terminal or opens the intgrated terminal through vs code. Then uses 
 
   ## Credits
   No other collaborators worked on this project.
 
   ## License 
-  This project does not contain a license. If you feel it needs to please contact jerrybeau89@gmail.com, thank you!
+  This is licensed for open source through None.Please visit  for more information.
 
   ## Features
   No special features on this project.
@@ -32,7 +33,7 @@
   If you would like to contribute please email me.
 
   ## Tests
-  You can run npm tests to test this project.
+  npm test
 
   ## Questions
 
