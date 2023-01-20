@@ -1,39 +1,39 @@
-# Professional README Generator
+# My Generated Professional README
 
   
-  
+
   ## Description
-  I created this project so that I can use node.js to create professtional 
+  I created this project to be able to create a professional readme using node.js. This will allow users to create readme's quickly and ensure all parts are added that are needed for the readme. In this project I improved my knowledge of node.js and inquirer.
 
   ## Table of Contents
   
   1. [Installation](#installation)
   2. [Usage](#usage)
   3. [License](#license)
-  4. [Contributing](#contributing)
+  4. [Contributions](#contributions)
   5. [Tests](#tests)
   6. [Questions](#questions)
 
   ## Installation
-  npm install professional-readme
+  To install you can run npm install professional-readme
 
   ## Usage
-  The user can navigate to the program folder in the terminal or opens the intgrated terminal through vs code. Then uses 
+  The user can navigate to the program folder in the terminal or opens the integrated terminal through VS code. Then uses 'node index.js' to start the program. The user will then complete prompts through the inquirer and a complete README.md will be generated from the users data.
 
   ## Credits
-  No other collaborators worked on this project.
+  No other collaborators
 
   ## License 
-  This is licensed for open source through None.Please visit  for more information.
+  This project does not contain a license. If you feel it needs to please contact jerrybeau89@gmail.com, thank you!
 
   ## Features
-  No special features on this project.
+  No special features.
 
   ## Contributions
-  If you would like to contribute please email me.
+  Please email me if you would like to contribute. My email will be below. 
 
   ## Tests
-  npm test
+  Run npm tests
 
   ## Questions
 

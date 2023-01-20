@@ -18,8 +18,11 @@
 
   https://github.com/jerrybeau89/professional-readme
 
+
   ## Usage
   The user can navigate to the program folder in the terminal or opens the integrated terminal through VS code. Then uses 'node index.js' to start the program. The user will then complete prompts through the inquirer and a complete README.md will be generated from the users data.
+
+  https://drive.google.com/file/d/1nrOKt0yI4yYT71Pp-35pU-4qKyUlV7ti/view
 
   ## Credits
   No other collaborators worked on this project.
